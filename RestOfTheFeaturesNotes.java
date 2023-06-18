@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class RestOfTheFeaturesNotes {
 //1.
@@ -21,11 +22,21 @@ public class RestOfTheFeaturesNotes {
     //    forEach()
 
     public static void main(String[] args) {
+        //for each
         List<Integer> l=new ArrayList<>(List.of(4,2,5,1,3));
 
         for (Integer x:
             l ) {
             System.out.println(x);
         }
+
+
+
+//optional
+       Optional<String> a= Optional.ofNullable("abc");
+        System.out.println(a.isEmpty()?"absent":a.get());
+
+//        Optional<String> a= Optional.ofNullable(null);
+       // System.out.println(a.isEmpty()?"absent":a.get());
     }
 }
